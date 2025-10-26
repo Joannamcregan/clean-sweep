@@ -1,0 +1,33 @@
+body{
+    position: relative;
+    width: 100vw;
+    padding: 20px 0px 0px 0px;
+    overflow-x: hidden;
+    margin: 0px;
+    font-family: sans-serif;
+}
+h1, h2, h3, span, p{
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+#logo-section{
+    width: fit-content;
+    padding: 20px 20px 0px 20px;
+    margin-left: 20px;
+    border-top: solid black 5px;
+    border-left: solid black 3px;
+}
+#logo{
+    font-size: 72px;
+    line-height: 80%;
+}
+#logo-section nav{
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px 0px 30px;
+    margin-bottom: 10px;
+}
+#logo-section nav a{
+    flex-grow: 1;
+}
