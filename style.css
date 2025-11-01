@@ -6,6 +6,9 @@ body{
     margin: 0px;
     font-family: sans-serif;
 }
+body.light{
+    background: rgb(159, 255, 230);
+}
 .hidden{
     display: none;
 }
@@ -15,7 +18,7 @@ h1, h2, h3, span, p{
     margin: 20px auto 5px auto;
 }
 header{
-    background: rgba(255, 255, 255, 0.374);
+    background: rgba(255, 255, 255, 0.5);
     height: 120px;
     overflow-x: hidden;
     margin: 0px;
@@ -25,7 +28,7 @@ header{
     left: 0px;
     right: 0px;
     display: block;
-    box-shadow: 0px 0px 5px 3px #333;
+    /* box-shadow: 0px 0px 5px 3px #333; */
     margin-bottom: 20px;
     z-index: 1000;
 }
@@ -59,19 +62,78 @@ header{
 }
 #about-section{
     background: rgb(159, 255, 230);
-    height: 100vh;
     width: 100vw;
     overflow-y: scroll;
     position: sticky;
-    top: 0;
+    z-index: 1000;
+    top: 0px;
     padding-top: 130px;
+    padding-bottom: 40px;
+}
+#our-story{
+    background: rgb(159, 255, 230);
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    position: sticky;
+    z-index: 1000;
+    top: 130px;
+    padding-bottom: 40px;
 }
 #services-section{
     background: rgb(255, 179, 129);
+    height: fit-content;
+    width: 100vw;
+    overflow-y: scroll;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding-top: 130px;
+}
+#contact-section{
+    background: rgb(189, 159, 255);
     height: 100vh;
     width: 100vw;
     overflow-y: scroll;
     position: sticky;
+    z-index: 1000;
     top: 0;
     padding-top: 130px;
+}
+#reviews-section{
+    background: rgb(159, 255, 230);
+    width: 100vw;
+    /* height: 100vh; */
+    overflow-y: scroll;
+    position: sticky;
+    z-index: 1000;
+    top: 0px;
+    padding-top: 130px;
+    padding-bottom: 40px;
+}
+#review-container{
+    position: sticky;
+    top: 160px;
+    background: rgb(159, 255, 230);
+}
+.review-box{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 0px;
+}
+.box-0{
+    background: rgb(255, 179, 129);
+}
+.box-1{
+    background: rgb(189, 159, 255);
+}
+footer{
+    background: rgb(159, 255, 230);
+    width: 100vw;
+    height: fit-content;
+    padding: 20px;
+    position: sticky;
+    z-index: 1000;
+    bottom: 0px;
 }
