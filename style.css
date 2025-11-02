@@ -19,7 +19,8 @@ h1, h2, h3, span, p{
 }
 header{
     background: rgba(255, 255, 255, 0.5);
-    height: 120px;
+    height: 150px;
+    width: 100vw;
     overflow-x: hidden;
     margin: 0px;
     padding: 10px;
@@ -30,7 +31,8 @@ header{
     display: block;
     /* box-shadow: 0px 0px 5px 3px #333; */
     margin-bottom: 20px;
-    z-index: 1000;
+    z-index: 2000;
+    /* border: solid blue 2px; */
 }
 #logo-section{
     width: fit-content;
@@ -59,6 +61,13 @@ header{
 }
 #mobile-menu-link{
     font-size: 34px;
+    text-align: center;
+    width: 100%;
+}
+.mode-selector{
+    margin-top: 5px;
+    text-align: center;
+    width: 100%;
 }
 #about-section{
     background: rgb(159, 255, 230);
@@ -67,17 +76,16 @@ header{
     position: sticky;
     z-index: 1000;
     top: 0px;
-    padding-top: 130px;
+    padding-top: 150px;
     padding-bottom: 40px;
 }
-#our-story{
+#our-story, #our-difference, #our-commitment{
     background: rgb(159, 255, 230);
     width: 100vw;
-    height: 100vh;
     overflow-y: scroll;
     position: sticky;
     z-index: 1000;
-    top: 130px;
+    top: 170px;
     padding-bottom: 40px;
 }
 #services-section{
@@ -88,7 +96,7 @@ header{
     position: sticky;
     z-index: 1000;
     top: 0;
-    padding-top: 130px;
+    padding-top: 150px;
 }
 #contact-section{
     background: rgb(189, 159, 255);
@@ -98,7 +106,7 @@ header{
     position: sticky;
     z-index: 1000;
     top: 0;
-    padding-top: 130px;
+    padding-top: 150px;
 }
 #reviews-section{
     background: rgb(159, 255, 230);
@@ -106,21 +114,23 @@ header{
     /* height: 100vh; */
     overflow-y: scroll;
     position: sticky;
-    z-index: 1000;
+    z-index: 1500;
     top: 0px;
-    padding-top: 130px;
+    padding-top: 150px;
     padding-bottom: 40px;
 }
 #review-container{
     position: sticky;
     top: 160px;
+    z-index: 1000;
     background: rgb(159, 255, 230);
 }
 .review-box{
     width: fit-content;
     height: fit-content;
-    padding: 10px;
+    padding: 20px;
     margin: 0px;
+    margin: 0px auto;
 }
 .box-0{
     background: rgb(255, 179, 129);
@@ -132,8 +142,7 @@ footer{
     background: rgb(159, 255, 230);
     width: 100vw;
     height: fit-content;
-    padding: 20px;
     position: sticky;
-    z-index: 1000;
+    /* z-index: 1000; */
     bottom: 0px;
 }
