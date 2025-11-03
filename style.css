@@ -12,10 +12,15 @@ body.light{
 .hidden{
     display: none;
 }
-h1, h2, h3, span, p{
+h1, h2{
     width: 90%;
     max-width: 800px;
-    margin: 20px auto 5px auto;
+    margin: 60px auto 0px auto;
+}
+h3, span, p{
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
 }
 header{
     background: rgba(255, 255, 255, 0.5);
@@ -86,16 +91,16 @@ header{
     position: sticky;
     z-index: 1000;
     top: 170px;
-    padding-bottom: 40px;
+    padding-bottom: 150px;
 }
 #services-section{
     background: rgb(255, 179, 129);
-    height: fit-content;
+    height: 100vh;
     width: 100vw;
     overflow-y: scroll;
     position: sticky;
     z-index: 1000;
-    top: 0;
+    top: 0px;
     padding-top: 150px;
 }
 #contact-section{
@@ -117,13 +122,13 @@ header{
     z-index: 1500;
     top: 0px;
     padding-top: 150px;
-    padding-bottom: 40px;
 }
 #review-container{
     position: sticky;
-    top: 160px;
+    top: 10px;
     z-index: 1000;
     background: rgb(159, 255, 230);
+    padding-bottom: 100px;
 }
 .review-box{
     width: fit-content;
@@ -143,6 +148,6 @@ footer{
     width: 100vw;
     height: fit-content;
     position: sticky;
-    /* z-index: 1000; */
+    padding-top: 200px;
     bottom: 0px;
 }
