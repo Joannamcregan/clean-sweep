@@ -5,6 +5,10 @@ body{
     overflow-x: hidden;
     margin: 0px;
     font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+.sticky{
+    position: sticky !important;
 }
 body.light{
     background: rgb(159, 255, 230);
@@ -78,7 +82,7 @@ header{
     background: rgb(159, 255, 230);
     width: 100vw;
     overflow-y: scroll;
-    position: sticky;
+    /* position: sticky; */
     z-index: 1000;
     top: 0px;
     padding-top: 150px;
@@ -98,7 +102,6 @@ header{
     height: 100vh;
     width: 100vw;
     overflow-y: scroll;
-    position: sticky;
     z-index: 1000;
     top: 0px;
     padding-top: 150px;
@@ -108,7 +111,6 @@ header{
     height: 100vh;
     width: 100vw;
     overflow-y: scroll;
-    position: sticky;
     z-index: 1000;
     top: 0;
     padding-top: 150px;
@@ -118,17 +120,16 @@ header{
     width: 100vw;
     /* height: 100vh; */
     overflow-y: scroll;
-    position: sticky;
     z-index: 1500;
     top: 0px;
     padding-top: 150px;
 }
 #review-container{
     position: sticky;
-    top: 10px;
+    top: 100px;
     z-index: 1000;
     background: rgb(159, 255, 230);
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 .review-box{
     width: fit-content;
@@ -143,6 +144,16 @@ header{
 .box-1{
     background: rgb(189, 159, 255);
 }
+#back-to-first{
+    text-decoration: underline;
+    text-align: center;
+    background: rgb(159, 255, 230);
+    width: 100vw;
+    height: fit-content;
+    position: sticky;
+    top: 0px;
+    padding-top: 80px;
+}
 footer{
     background: rgb(159, 255, 230);
     width: 100vw;
@@ -150,4 +161,5 @@ footer{
     position: sticky;
     padding-top: 200px;
     bottom: 0px;
+    padding-top: 40px;
 }
