@@ -21,7 +21,7 @@ h1, h2{
     max-width: 800px;
     margin: 60px auto 0px auto;
 }
-h3, span, p{
+h2.sub-heading, h3, span, p{
     width: 90%;
     max-width: 800px;
     margin: 20px auto;
@@ -42,6 +42,9 @@ header{
     margin-bottom: 20px;
     z-index: 2000;
     /* border: solid blue 2px; */
+}
+a{
+    color: #292929;
 }
 #logo-section{
     width: fit-content;
