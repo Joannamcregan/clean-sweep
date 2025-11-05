@@ -166,3 +166,32 @@ footer{
     bottom: 0px;
     padding-top: 40px;
 }
+#transition-overlay{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+.transitioning{
+    animation: transition 2s forwards;
+    z-index: 3000;
+}
+@keyframes transition {
+    0%{
+        background: rgb(159, 255, 230);
+        opacity: 1;
+    }
+    50%{
+        background: rgb(255, 179, 129);
+        opacity: 1;
+    }
+    90%{
+        background: rgb(189, 159, 255);
+        opacity: 1;
+    }
+    100%{
+        background: rgb(189, 159, 255);
+        opacity: 0;
+    }
+}
