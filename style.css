@@ -102,19 +102,26 @@ a{
 }
 #services-section{
     background: rgb(255, 179, 129);
-    /* height: 100vh; */
+    height: 100vh;
     width: 100vw;
     overflow-y: scroll;
-    z-index: 1500;
+    z-index: 1000;
     top: 0px;
     padding-top: 150px;
 }
-#services-container{
+.service-box{
+    width: 100vw;
+    overflow-y: scroll;
     position: sticky;
-    top: 100px;
     z-index: 1000;
+    top: 260px;
+    padding-bottom: 150px;
+}
+.service-box-0{
+    background: rgb(189, 159, 255);
+}
+.service-box-1{
     background: rgb(255, 179, 129);
-    padding-bottom: 0px;
 }
 #contact-section{
     background: rgb(189, 159, 255);
@@ -140,6 +147,7 @@ a{
     z-index: 1000;
     background: rgb(159, 255, 230);
     padding-bottom: 0px;
+    padding-top: 20px;
 }
 .review-box{
     width: fit-content;
@@ -149,10 +157,22 @@ a{
     margin: 0px auto;
 }
 .box-0{
-    background: rgb(255, 179, 129);
+    background: rgb(159, 255, 230);
+    border: solid rgb(255, 179, 129) 7px;
+    box-sizing: border-box;
 }
 .box-1{
     background: rgb(189, 159, 255);
+    border: solid rgb(189, 159, 255) 7px;
+}
+.box-2{
+    background: rgb(255, 179, 129);
+    border: solid rgb(255, 179, 129) 7px;
+}
+.box-3{
+    background: rgb(159, 255, 230);
+    border: solid rgb(189, 159, 255) 7px;
+    box-sizing: border-box;
 }
 #back-to-first{
     text-decoration: underline;
