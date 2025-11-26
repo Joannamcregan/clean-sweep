@@ -205,13 +205,15 @@ a{
 footer{
     background: rgb(159, 255, 230);
     width: 100vw;
-    /* height: fit-content; */
     height: 100px;
     position: sticky;
-    /* padding-top: 200px; */
     bottom: 0px;
     padding-top: 40px;
     z-index: 800;
+    text-align: center;
+}
+#privacy-policy-link{
+    text-decoration: underline;
 }
 #transition-overlay{
     position: fixed;
@@ -241,4 +243,86 @@ footer{
         background: rgb(189, 159, 255);
         opacity: 0;
     }
+}
+#cookie-banner{
+    position: fixed;
+    bottom: 0;
+    background: rgb(255, 179, 129);
+    width: 100%;
+    box-shadow: 0px -4px 20px black;
+    z-index: 3000;
+}
+#cookie-banner h3, #cookie-banner p{
+    width: 750px;
+    margin: 20px auto 10px auto;
+    padding: 0px;
+}
+.cookie-buttons-section{
+    max-width: 750px;
+    margin: 10px auto 20px auto;
+    display: flex;
+    justify-content: end;
+}
+.cookie-buttons-section{
+    max-width: 750px;
+    margin: 10px auto 20px auto;
+    display: flex;
+    justify-content: end;
+}
+@media screen and (max-width: 800px){
+    #cookie-banner h3{
+        width: 90vw;
+    }
+    .cookie-buttons-section{
+        max-width: 750px;
+    }
+}
+.cookie-buttons-section button{
+    border: solid black 2px;
+    background: transparent;
+    color: black;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.fade-closed{
+    animation: fade-out 1s forwards;
+}
+@keyframes fade-out {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.fade-open{
+    animation: fade-in 1s forwards;
+}
+@keyframes fade-in {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#privacy-policy{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 5000;
+    width: 100%;
+    background: rgb(228, 215, 255);
+    overflow-y: scroll;
+    padding-bottom: 100px;
+}
+#privacy-policy h1{
+    margin-top: 10px;
+}
+.overlay-close-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    height: 40px;
+    width: 40px;
 }

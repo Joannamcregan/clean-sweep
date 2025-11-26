@@ -7,6 +7,13 @@ const contactSection = document.getElementById('contact-section');
 const reviewsLink = document.getElementById('reviews-link');
 const reviewsSection = document.getElementById('reviews-section');
 const transitionOverlay = document.getElementById('transition-overlay');
+const cookieOverlay = document.getElementById('cookie-banner');
+const allowCookies = document.getElementById('allow-cookies');
+const disallowCookies = document.getElementById('disallow-cookies');
+const privacyPolicyLink = document.getElementById('privacy-policy-link');
+const closePrivacyPolicy = document.getElementById('close-privacy-policy');
+const privacyPolicy = document.getElementById('privacy-policy');
+
 
 aboutLink.addEventListener('click', ()=>{
     goToAbout();
@@ -20,6 +27,26 @@ contactLink.addEventListener('click', ()=>{
 reviewsLink.addEventListener('click', ()=>{
     goToReviews();
 })
+
+privacyPolicyLink.addEventListener("click", () => {
+    console.log('logggggg');
+    privacyPolicy.classList.remove('hidden');
+    privacyPolicy.classList.add('fade-open');
+    privacyPolicy.classList.add('block');
+    setTimeout(()=>{
+        privacyPolicy.classList.remove('fade-open');
+    }, 1000);
+})
+
+const closeCookieOverlay = () => {
+    cookieOverlay.classList.add('fade-closed');
+    setTimeout(()=>{
+        cookieOverlay.classList.add('hidden');
+    }, 1000)
+}
+
+allowCookies.addEventListener("click", closeCookieOverlay);
+disallowCookies.addEventListener("click", closeCookieOverlay);
 
 function goToAbout(){
     aboutSection.classList.remove('sticky');
