@@ -30,6 +30,7 @@ header{
     background: rgba(255, 255, 255, 0.5);
     height: 150px;
     width: 100vw;
+    box-sizing: border-box;
     overflow-x: hidden;
     margin: 0px;
     padding: 10px;
@@ -102,26 +103,28 @@ a{
 }
 #services-section{
     background: rgb(255, 179, 129);
-    height: 100vh;
+    min-height: fit-content;
     width: 100vw;
     overflow-y: scroll;
     z-index: 1000;
     top: 0px;
     padding-top: 150px;
 }
+#services-section h2{
+    padding-bottom: 30px;
+    margin-bottom: 0px;
+}
 .service-box{
     width: 100vw;
+    height: fit-content;
     overflow-y: scroll;
     position: sticky;
     z-index: 1000;
     top: 260px;
-    padding-bottom: 150px;
-}
-.service-box-0{
-    background: rgb(189, 159, 255);
-}
-.service-box-1{
     background: rgb(255, 179, 129);
+}
+.service-box-last{
+    padding-bottom: 300px;
 }
 #contact-section{
     background: rgb(189, 159, 255);
@@ -155,6 +158,7 @@ a{
     padding: 20px;
     margin: 0px;
     margin: 0px auto;
+    box-sizing: border-box;
 }
 .box-0{
     background: rgb(159, 255, 230);
@@ -173,25 +177,41 @@ a{
     background: rgb(159, 255, 230);
     border: solid rgb(189, 159, 255) 7px;
     box-sizing: border-box;
+    z-index: 5000;
 }
-#back-to-first{
-    text-decoration: underline;
-    text-align: center;
+.padding-vh{
+    height: 500px;
+}
+#bottom-section{
     background: rgb(159, 255, 230);
-    width: 100vw;
-    height: fit-content;
+    height: 100vh;
     position: sticky;
-    top: 0px;
-    padding-top: 80px;
+    top: 0;
+    z-index: 2100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bottom-logo{
+    width: fit-content;
+    height: fit-content;
+    padding: 100px 0px 0px 0px;
+}
+#bottom-logo p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 80px;
 }
 footer{
     background: rgb(159, 255, 230);
     width: 100vw;
-    height: fit-content;
+    /* height: fit-content; */
+    height: 100px;
     position: sticky;
-    padding-top: 200px;
+    /* padding-top: 200px; */
     bottom: 0px;
     padding-top: 40px;
+    z-index: 800;
 }
 #transition-overlay{
     position: fixed;
