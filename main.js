@@ -38,6 +38,15 @@ privacyPolicyLink.addEventListener("click", () => {
     }, 1000);
 })
 
+closePrivacyPolicy.addEventListener("click", () => {
+    privacyPolicy.classList.remove('block');
+    privacyPolicy.classList.add('fade-closed');
+    setTimeout(()=>{
+        privacyPolicy.classList.add('hidden');
+        privacyPolicy.classList.remove('fade-closed');
+    }, 1000);
+})
+
 const closeCookieOverlay = () => {
     cookieOverlay.classList.add('fade-closed');
     setTimeout(()=>{
