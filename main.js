@@ -13,6 +13,9 @@ const disallowCookies = document.getElementById('disallow-cookies');
 const privacyPolicyLink = document.getElementById('privacy-policy-link');
 const closePrivacyPolicy = document.getElementById('close-privacy-policy');
 const privacyPolicy = document.getElementById('privacy-policy');
+const openMobileMenu = document.getElementById('mobile-menu-link');
+const closeMobileMenu = document.getElementById('close-mobile-menu');
+const mobileMenu = document.getElementById('mobile-menu');
 
 
 aboutLink.addEventListener('click', ()=>{
@@ -56,6 +59,22 @@ const closeCookieOverlay = () => {
 
 allowCookies.addEventListener("click", closeCookieOverlay);
 disallowCookies.addEventListener("click", closeCookieOverlay);
+
+openMobileMenu.addEventListener("click", ()=>{
+    mobileMenu.classList.add('fade-open');
+    mobileMenu.classList.remove('hidden');
+    setTimeout(()=>{
+        mobileMenu.classList.remove('fade-open');
+    }, 1000);
+})
+
+closeMobileMenu.addEventListener("click", ()=>{
+    mobileMenu.classList.add('fade-closed');
+    setTimeout(()=>{
+        mobileMenu.classList.add('hidden');
+        mobileMenu.classList.remove('fade-closed');
+    }, 1000)
+})
 
 function goToAbout(){
     aboutSection.classList.remove('sticky');

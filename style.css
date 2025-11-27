@@ -94,10 +94,16 @@ a{
     width: 100%;
     margin: 0px;
 }
-.mode-selector{
-    margin-top: 5px;
-    text-align: center;
-    width: 100%;
+#mobile-menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: fit-content;
+    background: rgb(166, 228, 211);
+    border: solid rgb(1, 237, 174) 10px;
+    padding: 30px 60px;
+    z-index: 5000;
+    box-shadow: -2px 2px 5px black;
 }
 #about-section{
     background: rgb(159, 255, 230);
@@ -272,7 +278,7 @@ footer{
     padding-top: 20px;
 }
 #cookie-banner h3, #cookie-banner p{
-    width: 750px;
+    max-width: 750px;
     margin: 20px auto 10px auto;
     padding: 0px;
 }
