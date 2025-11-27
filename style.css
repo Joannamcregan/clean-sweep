@@ -99,11 +99,18 @@ a{
     top: 0;
     right: 0;
     width: fit-content;
-    background: rgb(166, 228, 211);
-    border: solid rgb(1, 237, 174) 10px;
-    padding: 30px 60px;
-    z-index: 5000;
+    background: rgb(205, 255, 242);
+    border: solid rgb(62, 255, 204) 10px;
+    padding: 20px;
+    z-index: 2500;
     box-shadow: -2px 2px 5px black;
+}
+#mobile-menu nav{
+    padding: 20px 100px 0px 0px;
+}
+#close-mobile-menu{
+    padding: 0px;
+    margin: 0px;
 }
 #about-section{
     background: rgb(159, 255, 230);
@@ -288,12 +295,6 @@ footer{
     display: flex;
     justify-content: end;
 }
-.cookie-buttons-section{
-    max-width: 750px;
-    margin: 10px auto 20px auto;
-    display: flex;
-    justify-content: end;
-}
 @media screen and (max-width: 800px){
     #cookie-banner h3{
         width: 90vw;
@@ -308,6 +309,7 @@ footer{
     color: black;
     padding: 10px 20px;
     margin: 10px;
+    cursor: pointer;
 }
 .fade-closed{
     animation: fade-out 1s forwards;

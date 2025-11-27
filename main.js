@@ -1,10 +1,14 @@
 const aboutLink = document.getElementById('about-link');
+const aboutMobileLink = document.getElementById('about-mobile-link');
 const aboutSection = document.getElementById('about-section');
 const servicesLink = document.getElementById('services-link');
+const servicesMobileLink = document.getElementById('services-mobile-link');
 const servicesSection = document.getElementById('services-section');
 const contactLink = document.getElementById('contact-link');
+const contactMobileLink = document.getElementById('contact-mobile-link');
 const contactSection = document.getElementById('contact-section');
 const reviewsLink = document.getElementById('reviews-link');
+const reviewsMobileLink = document.getElementById('reviews-mobile-link');
 const reviewsSection = document.getElementById('reviews-section');
 const transitionOverlay = document.getElementById('transition-overlay');
 const cookieOverlay = document.getElementById('cookie-banner');
@@ -21,18 +25,29 @@ const mobileMenu = document.getElementById('mobile-menu');
 aboutLink.addEventListener('click', ()=>{
     goToAbout();
 });
+aboutMobileLink.addEventListener('click', ()=>{
+    goToAbout();
+})
 servicesLink.addEventListener('click', ()=>{
+    goToServices();
+})
+servicesMobileLink.addEventListener('click', ()=>{
     goToServices();
 })
 contactLink.addEventListener('click', ()=>{
     goToContact();
 })
+contactMobileLink.addEventListener('click', ()=>{
+    goToContact();
+})
 reviewsLink.addEventListener('click', ()=>{
+    goToReviews();
+})
+reviewsMobileLink.addEventListener('click', ()=>{
     goToReviews();
 })
 
 privacyPolicyLink.addEventListener("click", () => {
-    console.log('logggggg');
     privacyPolicy.classList.remove('hidden');
     privacyPolicy.classList.add('fade-open');
     privacyPolicy.classList.add('block');
@@ -69,12 +84,16 @@ openMobileMenu.addEventListener("click", ()=>{
 })
 
 closeMobileMenu.addEventListener("click", ()=>{
+    fadeOutMobileMenu();
+})
+
+function fadeOutMobileMenu(){
     mobileMenu.classList.add('fade-closed');
     setTimeout(()=>{
         mobileMenu.classList.add('hidden');
         mobileMenu.classList.remove('fade-closed');
     }, 1000)
-})
+}
 
 function goToAbout(){
     aboutSection.classList.remove('sticky');
@@ -87,6 +106,7 @@ function goToAbout(){
         transitionOverlay.classList.add('hidden');
         transitionOverlay.classList.remove('transitioning');
     }, 2000);
+    fadeOutMobileMenu();
 }
 
 function goToServices(){
@@ -100,6 +120,7 @@ function goToServices(){
         transitionOverlay.classList.add('hidden');
         transitionOverlay.classList.remove('transitioning');
     }, 2000);
+    fadeOutMobileMenu();
 }
 
 function goToContact(){
@@ -113,6 +134,7 @@ function goToContact(){
         transitionOverlay.classList.add('hidden');
         transitionOverlay.classList.remove('transitioning');
     }, 2000);
+    fadeOutMobileMenu();
 }
 
 function goToReviews(){
@@ -127,4 +149,5 @@ function goToReviews(){
         transitionOverlay.classList.add('hidden');
         transitionOverlay.classList.remove('transitioning');
     }, 2000);
+    fadeOutMobileMenu();
 }
