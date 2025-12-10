@@ -138,7 +138,6 @@ function goToContact(){
 }
 
 function goToReviews(){
-    console.log('taking the hobits to review section');
     reviewsSection.classList.remove('sticky');
     transitionOverlay.classList.remove('hidden');
     transitionOverlay.classList.add('transitioning');
